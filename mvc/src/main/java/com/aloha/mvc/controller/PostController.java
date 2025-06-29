@@ -145,7 +145,7 @@ public class PostController {
      * @return
      * @throws Exception
      */
-    @GetMapping("/update{no}")
+    @GetMapping("/update/{no}")
     public String update(@PathVariable("no") Integer no, Model model) throws Exception {
         // 데이터 요청
         Posts post = postService.select(no);
